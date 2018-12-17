@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+// mongoose.Promise = global.Promise;
+
 
 
 const componentSchema = new Schema({
@@ -42,7 +44,7 @@ const componentSchema = new Schema({
 		type: 'String'
 	},
 	i_min: {
-		type: 'Number'
+		type: { type: Number }
 	},
 	icon_text: {
 		type: 'String'
